@@ -4,8 +4,8 @@
 	"port": "5432",
 	"username": "postgres",
 	"password": "",
-	"database": "test_nest_js",
-	"synchronize": false,
+	"database": "nest_js",
+	"synchronize": true,
 	"logging": true,
 	"entities": ["./dist/**/*.entity.js"]
 }
