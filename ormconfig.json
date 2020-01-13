@@ -5,7 +5,7 @@
 	"username": "postgres",
 	"password": "",
 	"database": "nest_js",
-	"synchronize": false,
+	"synchronize": true,
 	"logging": true,
 	"entities": ["./dist/**/*.entity.js"]
 }
