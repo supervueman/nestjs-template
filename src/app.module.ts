@@ -7,8 +7,9 @@ import { SharedModule } from './shared/shared.module';
 import { APP_FILTER, APP_INTERCEPTOR } from '@nestjs/core';
 import { HttpErrorFilter } from './shared/http-error.filter';
 import { LoggingInterceptor } from './shared/logging.interceptor';
+import { CommentModule } from './comment/comment.module';
 @Module({
-  imports: [TypeOrmModule.forRoot(), UserModule, AuthModule, IdeaModule, SharedModule],
+  imports: [TypeOrmModule.forRoot(), UserModule, AuthModule, IdeaModule, SharedModule, CommentModule],
   providers: [{
     provide: APP_FILTER,
     useClass: HttpErrorFilter,
